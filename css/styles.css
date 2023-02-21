@@ -1,0 +1,186 @@
+:root {
+    --secondary-font: 'Raleway', sans-serif;
+    --accent-color: #ff6c00;
+    --secondary-text-color-theme-light: #303030;
+    --secondary-font-family: 'Raleway';
+    --secondary-text-color-theme-light: #303030;
+    --secondary-text-color-theme-dark: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+}
+
+button {
+    cursor: pointer;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #FFFFFF;
+    color: #2E2F42;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+}
+
+/* ============ components ============= */
+
+.suptitle {
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 1.36;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.page-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.page-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.page-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 131px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.modal-btn {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #ff6c00;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    background-color: transparent;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: var(--accent-color);
+    color: #FFFFFF;
+}
+
+.main-title {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+}
+
+.title {
+    font-family: var(--secondary-font-family);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.67;
+    letter-spacing: 0.05em;
+}
+
+/* .title-theme-dark {
+    margin-bottom: 44px;
+    color: var(--secondary-text-color-theme-dark);
+} */
+
+.title-theme-light {
+    margin-bottom: 20px;
+    color: var(--secondary-text-color-theme-light);
+}
+
+.contact-phone-number {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.1em;
+    margin-left: auto;
+    margin-right: 43px;
+}
+
+/* ========================  Our Barbers ==================== */
+
+.employees-section {
+    background-color: #f7f7f7;
+}
+
+.employees-name {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-light)
+}
+
+.employees-position {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--accent-color)
+}
+
+.employees-title {
+    margin-bottom: 44px;
+}
+
+/* ========================  /Our Barbers ==================== */

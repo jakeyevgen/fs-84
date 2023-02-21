@@ -5,11 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BarberShop &#128136</title>
+    	<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="/">
+    <header class="page-header">
+      <div class="container page-header-container">
+        <nav class="page-nav">
+        <a class="logo" href="/"> 
           <img
             src="./img/LogoBarber.svg"
             alt="Logo site"
@@ -17,33 +26,35 @@
             height="55"
           />
         </a>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services and prices</a></li>
-          <li><a href="#barbers">Barbers</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+        <ul class="menu list">
+          <li class="menu-item"><a href="#about" class="link">About</a></li>
+          <li class="menu-item"><a href="#services" class="link">Services and prices</a></li>
+          <li class="menu-item"><a href="#barbers" class="link">Barbers</a></li>
+          <li class="menu-item"><a href="#contacts" class="link">Contacts</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">Online-booking</button>
+      <a href="tel:+380441111111" class="contact-phone-number link">+38 044 111 11 11</a>
+      <button type="button" class="modal-btn">Online-booking</button>
+      </div>
+      
     </header>
     <main>
       <!-- Hero section -->
-      <section>
-        <ul>
+      <section class="container section">
+        <ul class="list">
           <li>
-            <a href="#" target="_blank" rel="noopener noreferrer nofollow"
+            <a href="#" class="link" target="_blank" rel="noopener noreferrer nofollow"
               >Instagram</a
             >
           </li>
           <li>
-            <a href="#" target="_blank" rel="noopener noreferrer nofollow"
+            <a href="#" class="link" target="_blank" rel="noopener noreferrer nofollow"
               >YouTube</a
             >
           </li>
         </ul>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
+        <p class="suptitle">A hair salon for men in Kyiv</p>
+        <h1 class="main-title title-theme-dark">BarberShop</h1>
         <p>
           We are experts in trendy men’s haircuts. We work quickly, carefully
           and with style.
@@ -52,13 +63,13 @@
       <!-- /Hero section -->
 
       <!-- About section -->
-      <section id="about">
-        <ul>
+      <section id="about" class="container section">
+        <ul class="list"
           <li><img src="./img/img1.jpg" alt="About 1" /></li>
           <li><img src="./img/img2.jpg" alt="About 2" /></li>
         </ul>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
+        <p class="suptitle">About</p>
+        <h2 class="title title-theme-light">Best Barbershop in your city</h2>
         <p>
           <span
             >If you want to add more confidence to your image, you should
@@ -75,9 +86,9 @@
       <!-- /About section -->
 
       <!-- Services and prices -->
-      <section id="services">
-        <p>Spend your time with the best masters</p>
-        <h2>Services and prices</h2>
+      <section id="services" class="container section">
+        <p class="suptitle">Spend your time with the best masters</p>
+        <h2 class="title title-theme-dark">Services and prices</h2>
         <ul>
           <li>
             <p>Men’s haircut</p>
@@ -119,7 +130,7 @@
       <!-- /Services and prices -->
 
       <!-- Feautures -->
-      <section>
+      <section class="container section">
         <ul>
           <li>
             <span>600</span>
@@ -138,8 +149,8 @@
             <p>Gifts for regular customers</p>
           </li>
         </ul>
-        <p>Old traditional school</p>
-        <h2>¿Why people come to us?</h2>
+        <p class="suptitle">Old traditional school</p>
+        <h2 class="title title-theme-light">¿Why people come to us?</h2>
         <p>
           Only good things are said about us. But it's better to see and feel 1
           time than read 10 times.
@@ -148,10 +159,11 @@
       <!-- /Feautures -->
 
       <!-- Our barbers -->
-      <section id="barbers">
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-        <ul>
+      <section id="barbers" class="employees-section section">
+        <div class="container">
+          <p class="suptitle">For true enjoyers of the atmosphere</p>
+        <h2 class="title title-theme-light employees-title">Our barbers</h2>
+        <ul class="list">
           <li>
             <img
               src="./img/our_barbers/john_smith.jpg"
@@ -159,8 +171,8 @@
               width="370"
               height="346"
             />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
+            <h3 class="employees-name">John Smith</h3>
+            <p class="employees-position">Extreme Barber</p>
           </li>
 
           <li>
@@ -170,8 +182,8 @@
               width="370"
               height="346"
             />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
+            <h3 class="employees-name">Michele Doe</h3>
+            <p class="employees-position">Extreme Barber</p>
           </li>
 
           <li>
@@ -181,16 +193,18 @@
               width="370"
               height="346"
             />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
+            <h3 class="employees-name">Alan Black</h3>
+            <p class="employees-position">Extreme Barber</p>
           </li>
         </ul>
+        </div>
+        
       </section>
       <!-- /Our barbers -->
 
       <!-- Gallery -->
-      <section>
-        <p>In Latin, "barba" means "beard"</p>
+      <section class="container section">
+        <p class="suptitle">In Latin, "barba" means "beard"</p>
         <h2 hidden>Gallery</h2>
         <ul>
           <li>
@@ -230,9 +244,9 @@
       <!-- /Gallery -->
 
       <!-- Contacts -->
-      <section id="contacts">
-        <h2>Online-booking</h2>
-        <h2>Contacts</h2>
+      <section id="contacts" class="container section">
+        <h2 class="title title-theme-light">Online-booking</h2>
+        <h2 class="title title-theme-light">Contacts</h2>
         <address>
           <ul>
             <li>
@@ -251,13 +265,13 @@
           </ul>
         </address>
 
-        <h3>Working hours</h3>
+        <h3 class="suptitle">Working hours</h3>
         <p>Every day from 9:00 to 22:00</p>
       </section>
       <!-- /Contacts -->
     </main>
 
-    <footer>
+    <footer class="container section">
       <p>&copy;Copyright 2020</p>
        <ul>
           <li>
